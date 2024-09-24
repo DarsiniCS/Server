@@ -1,5 +1,5 @@
 const mongoose=require('mongoose')
-mongoose.connect(process.env.MONGOURL)
+mongoose.connect(process.env.MONGOURL || "mongodb+srv://admin:darsinics1718@in-aws.l3xuo.mongodb.net/Project-Mern?retryWrites=true&w=majority&appName=IN-AWS")
 const connection=mongoose.connection;
 connection.on('connected',() =>
 {
