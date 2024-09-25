@@ -9,6 +9,18 @@ const projectSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+coverimg: {
+  type: String,
+  required: true,
+},
+link: {
+  type: String,
+  required: false,
+},
+git: {
+  type: String,
+  required: true,
+}
 });
 
 const Projects = mongoose.model("Projects", projectSchema);
